@@ -22,3 +22,5 @@ it gives us
 12. never
 
 ![alt text](./public/image.png)
+
+# for function there should be type annotation for variable its optional

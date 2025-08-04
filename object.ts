@@ -1,4 +1,4 @@
-const User = {
+const Userss = {
   name: "John Doe",
   age: 30,
   isActive: true,
@@ -50,7 +50,7 @@ function createUserWithType(user: UserType): UserType {
 
 createUserWithType({ name: "Alice", age: 28, isActive: true });
 
-type User = {
+type Userss = {
   readonly id: string;
   name: string;
   age: number;
@@ -58,7 +58,7 @@ type User = {
   credCardsDetail?: number; //it will not give error if we dont pass this parameter as it is optional
 };
 
-let myUser: User = {
+let myUser: Userss = {
   id: "123",
   name: "Bob",
   age: 35,

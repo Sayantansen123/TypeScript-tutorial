@@ -93,3 +93,25 @@ Anotherfunc2(3, {
   name: "any",
   type: "any",
 });
+
+//lets work with class generics
+interface quiz {
+  name: string;
+  type: string;
+}
+
+interface Course {
+  name: string;
+  author: string;
+  subject: string;
+}
+
+class sellable<T> {
+  //takes an array of generic type it can be anything
+  public cart: T[] = [];
+
+  //in cart we can push any quiz or course
+  addToCart(products: T) {
+    this.cart.push(products);
+  }
+}
